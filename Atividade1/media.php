@@ -15,14 +15,14 @@
     </form>
 
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $nome = $_POST['nome'];
-        $nota1 = $_POST['nota1'];
-        $nota2 = $_POST['nota2'];
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $nome = $_POST['nome'];
+            $nota1 = $_POST['nota1'];
+            $nota2 = $_POST['nota2'];
 
-        $media = ($nota1 + $nota2) / 2;
-        echo "<p>O aluno " . htmlspecialchars($nome) . " ficou com " . number_format($media, 1) . " de média.</p>";
-    }
+            $media = ($nota1 + $nota2) / 2;
+            echo "<p>O aluno " . htmlspecialchars($nome) . " ficou com " . number_format($media, 1) . " de média.</p>";
+        }
     ?>
 </body>
 </html>

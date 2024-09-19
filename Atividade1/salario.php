@@ -14,16 +14,16 @@
     </form>
 
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $salario_fixo = $_POST['salario_fixo'];
-        $vendas = $_POST['vendas'];
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $salario_fixo = $_POST['salario_fixo'];
+            $vendas = $_POST['vendas'];
 
-        $comissao = $vendas * 0.04;
-        $salario_final = $salario_fixo + $comissao;
+            $comissao = $vendas * 0.04;
+            $salario_final = $salario_fixo + $comissao;
 
-        echo "<p>A comissão e: R$ " . number_format($comissao, 2) . "</p>";
-        echo "<p>O salerio final e: R$ " . number_format($salario_final, 2) . "</p>";
-    }
+            echo "<p>A comissão e: R$ " . number_format($comissao, 2) . "</p>";
+            echo "<p>O salerio final e: R$ " . number_format($salario_final, 2) . "</p>";
+        }
     ?>
 </body>
 </html>

@@ -15,14 +15,14 @@
     </form>
 
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $base_maior = $_POST['base_maior'];
-        $base_menor = $_POST['base_menor'];
-        $altura = $_POST['altura'];
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $base_maior = $_POST['base_maior'];
+            $base_menor = $_POST['base_menor'];
+            $altura = $_POST['altura'];
 
-        $area = (($base_maior + $base_menor) * $altura) / 2;
-        echo "<p>A area do trapezio e: " . $area . "</p>";
-    }
+            $area = (($base_maior + $base_menor) * $altura) / 2;
+            echo "<p>A area do trapezio e: " . $area . "</p>";
+        }
     ?>
 </body>
 </html>
